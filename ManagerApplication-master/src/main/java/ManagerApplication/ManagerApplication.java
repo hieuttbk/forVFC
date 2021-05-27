@@ -79,8 +79,13 @@ public class ManagerApplication {
 				resource = new JSONObject();
 				resource.put("m2m:sub", obj);
 				HttpResponse response = new HttpResponse();
+				
 				response = RestHttpClient.post(ConfigVar.ORIGINATOR, ConfigVar.MANCSEPOA
 						+ "/~/"+ "worker-"+i+"-id"+"/"+"worker-"+i+"/" + j, resource.toString(), 23);
+				
+				System.out.println("Response = " + response.getBody());
+				
+				
 				// store container and Parent ID
 				cnt.add(new Container(j, (new JSONObject(response.getBody()))
 						.getJSONObject("m2m:sub").get("pi").toString()));

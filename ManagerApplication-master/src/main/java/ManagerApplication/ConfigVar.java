@@ -30,7 +30,7 @@ public class ConfigVar {
 	public static final int DEPLOY = 2;
 	public static final int ZIP = 3;
 	
-	public static final int WORKERS = 1; //range( 1 -> n );
+	public static final int WORKERS = 2; //range( 1 -> n );
 	
 	public static final SimpleDateFormat SDF = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss"); //date format
 	
