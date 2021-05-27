@@ -13,7 +13,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>WorkerApplication.main.WorkerApplication</mainClass>
+              <mainClass>WorkerApplication.Main.WorkerApplication</mainClass>
             </manifest>
           </archive>
         </configuration>

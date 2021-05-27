@@ -1,4 +1,4 @@
-package WorkerApplicationLocal;
+package WorkerApplication.Main;
 
 import java.sql.Timestamp;
 import java.util.Calendar;

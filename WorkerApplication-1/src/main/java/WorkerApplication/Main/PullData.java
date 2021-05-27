@@ -1,4 +1,4 @@
-package WorkerApplicationLocal;
+package WorkerApplication.Main;
 
 import java.io.BufferedReader;
 import java.io.File;

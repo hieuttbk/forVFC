@@ -1,4 +1,4 @@
-package WorkerApplicationLocal;
+package WorkerApplication.Main;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -41,7 +41,9 @@ public class DockerController {
 				+ serviceId + " " + startImage + " " + endImage + " "  
 				+ timeCommand;
 		
-		try {
+		System.out.println("Run Docker: " + commandDeploy);
+		
+		/*try {
 			Process proc = Runtime.getRuntime().exec(commandDeploy);
 
 			Boolean status = proc.waitFor() == 0 && proc.exitValue() == 0;
@@ -58,7 +60,7 @@ public class DockerController {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}*/
 			
 	}
 }

@@ -1,4 +1,4 @@
-package WorkerApplicationLocal;
+package WorkerApplication.Main;
 
 import java.io.File;
 import java.io.IOException;
@@ -105,7 +105,10 @@ public class WorkerApplication {
 			response = RestHttpClient.post(CommonVar.ORIGINATOR, 
 											CommonVar.WORKERCSEPOA+"/~/"+CommonVar.WORKERCSEID+"/"+
 											CommonVar.WORKERCSENAME+"/"+i, 
-											resource.toString(), 23);			
+											resource.toString(), 23);		
+			
+		//	System.out.println("Response = " + response.getBody());
+			
 			json = new JSONObject(response.getBody());
 			cnt[j] = new Container(i, json.getJSONObject("m2m:sub").get("pi").toString());
 			j++;

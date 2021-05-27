@@ -1,4 +1,4 @@
-package WorkerApplicationLocal;
+package WorkerApplication.Main;
 
 import java.io.File;
 import java.io.FileInputStream;
