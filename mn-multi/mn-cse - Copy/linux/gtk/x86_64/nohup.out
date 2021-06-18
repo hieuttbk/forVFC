@@ -1,0 +1,428 @@
+[INFO] - org.eclipse.om2m.datamapping.jaxb.Activator  
+Starting Data Mapper
+[INFO] - org.eclipse.om2m.datamapping.jaxb.Activator  
+Registering XML Mapper Service.. 
+[INFO] - org.eclipse.om2m.datamapping.jaxb.Activator  
+XML Mapper service registered. | 2345
+[INFO] - org.eclipse.om2m.datamapping.jaxb.Activator  
+Registering JSON Mapper Service.. 
+[INFO] - org.eclipse.om2m.datamapping.jaxb.Activator  
+JSON Mapper service registered. | 716
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+System property [bundles.configuration.location] is not defined.
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Using default configurations location [configurations].
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Using configuration from [configurations]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Directory [configurations/factories] does not exist.
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+System property [bundles.configuration.location] is not defined.
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Using default configurations location [configurations].
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Using configuration from [configurations]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Directory [configurations/factories] does not exist.
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Register configuration [smarter.coffee]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Register configuration [hue.basedriver]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Register configuration [sdt.ipe]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Register configuration [lifx.basedriver]
+[INFO] - org.ops4j.pax.configmanager.internal.ConfigurationAdminFacade  
+Register configuration [netatmo.sdt.driver]
+[INFO] - org.eclipse.om2m.binding.http.Activator  
+Register HTTP RestClientService..
+[INFO] - org.eclipse.om2m.binding.http.Activator  
+HTTP RestClientService is registered.
+[INFO] - org.eclipse.om2m.persistence.eclipselink.Activator  
+Starting Persistence JPA plugin...
+[INFO] - org.eclipse.om2m.core.Activator  
+Starting CSE...
+[INFO] - org.eclipse.om2m.core.Activator  
+Added Data Mapper Service: application/xml
+[INFO] - org.eclipse.om2m.core.Activator  
+Added Data Mapper Service: application/json
+[INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl  
+Initializing Database...
+[INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl  
+Creating new EntityManagerFactory...
+[INFO] - org.eclipse.om2m.core.Activator  
+Rest client service discovered. Protocol: http
+[INFO] - org.eclipse.om2m.binding.http.Activator  
+HttpService discovered
+[INFO] - org.eclipse.om2m.binding.http.Activator  
+Register / context
+[INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator  
+HttpService discovered
+[INFO] - org.eclipse.om2m.webapp.resourcesbrowser.json.Activator  
+Register /webpage http context
+osgi> [INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl  
+DataBase initialized.
+[INFO] - org.eclipse.om2m.persistence.eclipselink.Activator  
+Registering Database (JPA-EL) Service
+[INFO] - org.eclipse.om2m.core.Activator  
+DataBase persistence service discovered
+[INFO] - org.eclipse.om2m.core.thread.CoreExecutor  
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Initializating the cseBase
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Create AccessControlPolicy resource
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Create CSEBase resource
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Register CSE to another CSE.
+[INFO] - org.eclipse.om2m.core.Activator  
+Registering CseService...
+[INFO] - org.eclipse.om2m.binding.http.Activator  
+CseService discovered
+[INFO] - org.eclipse.om2m.core.Activator  
+CSE Started
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+the requestIndication RC: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ , 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Sending request: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ , 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Request to be send: POST http://192.168.1.120:8080/~/in-cse HTTP/1.1
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Headers:
+Accept: 
+X-M2M-RI: 001
+X-M2M-Origin: admin:admin
+Content-Type: application/xml;ty=16
+
+[ERROR] - org.eclipse.om2m.binding.http.RestHttpClient  
+http://192.168.1.120:8080/~/in-cse not found
+java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.om2m.binding.http.RestHttpClient.sendRequest(RestHttpClient.java:197)
+	at org.eclipse.om2m.core.comm.RestClient.sendRequest(RestClient.java:61)
+	at org.eclipse.om2m.core.CSEInitializer.registerCSE(CSEInitializer.java:213)
+	at org.eclipse.om2m.core.CSEInitializer.access$0(CSEInitializer.java:166)
+	at org.eclipse.om2m.core.CSEInitializer$1.run(CSEInitializer.java:104)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+response after registration: ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Error in registration to another CSE. Retrying in 10s
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+the requestIndication RC: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Sending request: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Request to be send: POST http://192.168.1.120:8080/~/in-cse HTTP/1.1
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Headers:
+Accept: 
+X-M2M-RI: 001
+X-M2M-Origin: admin:admin
+Content-Type: application/xml;ty=16
+
+[ERROR] - org.eclipse.om2m.binding.http.RestHttpClient  
+http://192.168.1.120:8080/~/in-cse not found
+java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.om2m.binding.http.RestHttpClient.sendRequest(RestHttpClient.java:197)
+	at org.eclipse.om2m.core.comm.RestClient.sendRequest(RestClient.java:61)
+	at org.eclipse.om2m.core.CSEInitializer.registerCSE(CSEInitializer.java:213)
+	at org.eclipse.om2m.core.CSEInitializer.access$0(CSEInitializer.java:166)
+	at org.eclipse.om2m.core.CSEInitializer$1.run(CSEInitializer.java:104)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+response after registration: ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Error in registration to another CSE. Retrying in 10s
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+the requestIndication RC: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Sending request: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Request to be send: POST http://192.168.1.120:8080/~/in-cse HTTP/1.1
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Headers:
+Accept: 
+X-M2M-RI: 001
+X-M2M-Origin: admin:admin
+Content-Type: application/xml;ty=16
+
+[ERROR] - org.eclipse.om2m.binding.http.RestHttpClient  
+http://192.168.1.120:8080/~/in-cse not found
+java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.om2m.binding.http.RestHttpClient.sendRequest(RestHttpClient.java:197)
+	at org.eclipse.om2m.core.comm.RestClient.sendRequest(RestClient.java:61)
+	at org.eclipse.om2m.core.CSEInitializer.registerCSE(CSEInitializer.java:213)
+	at org.eclipse.om2m.core.CSEInitializer.access$0(CSEInitializer.java:166)
+	at org.eclipse.om2m.core.CSEInitializer$1.run(CSEInitializer.java:104)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+response after registration: ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Error in registration to another CSE. Retrying in 10s
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+the requestIndication RC: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Sending request: RequestPrimitive [operation=1,
+ to=http://192.168.1.120:8080/~/in-cse,
+ from=admin:admin,
+ requestIdentifier=001,
+ resourceType=16,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" xmlns:hd="http://www.onem2m.org/xml/protocols/homedomain" rn="worker-1">
+   <poa>http://192.168.1.144:8181/</poa>
+   <cb>//om2m.org/worker-1-id</cb>
+   <csi>/worker-1-id</csi>
+   <rr>true</rr>
+   <dc>worker-1</dc>
+</m2m:csr>
+,
+ requestContentType=application/xml,
+ queryStrings={}, 
+,tokens=null]
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Request to be send: POST http://192.168.1.120:8080/~/in-cse HTTP/1.1
+[INFO] - org.eclipse.om2m.binding.http.RestHttpClient  
+Headers:
+Accept: 
+X-M2M-RI: 001
+X-M2M-Origin: admin:admin
+Content-Type: application/xml;ty=16
+
+[ERROR] - org.eclipse.om2m.binding.http.RestHttpClient  
+http://192.168.1.120:8080/~/in-cse not found
+java.net.NoRouteToHostException: No route to host (Host unreachable)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:72)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.om2m.binding.http.RestHttpClient.sendRequest(RestHttpClient.java:197)
+	at org.eclipse.om2m.core.comm.RestClient.sendRequest(RestClient.java:61)
+	at org.eclipse.om2m.core.CSEInitializer.registerCSE(CSEInitializer.java:213)
+	at org.eclipse.om2m.core.CSEInitializer.access$0(CSEInitializer.java:166)
+	at org.eclipse.om2m.core.CSEInitializer$1.run(CSEInitializer.java:104)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO] - org.eclipse.om2m.core.comm.RestClient  
+ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+response after registration: ResponsePrimitive [
+ responseStatusCode=5103
+ requestIdentifier=001
+ to=admin:admin
+ from=/worker-1-id
+ ]
+[INFO] - org.eclipse.om2m.core.CSEInitializer  
+Error in registration to another CSE. Retrying in 10s

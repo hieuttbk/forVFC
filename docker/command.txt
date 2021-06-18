@@ -1,0 +1,7 @@
+ python3 -m pip install --upgrade pip 
+
+1676  pip install --upgrade pip
+
+ 1681  pip3 install scikit-image
+ 1683  python3 -m pip install keras
+ python3 -m pip install requests
