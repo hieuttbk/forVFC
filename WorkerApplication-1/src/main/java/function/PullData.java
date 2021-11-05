@@ -1,4 +1,4 @@
-package WorkerApplication.Main;
+package function;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,6 +13,10 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
+
+import http.HttpResponse;
+import http.RestHttpClient;
+import main.CommonVar;
 
 public class PullData {
 

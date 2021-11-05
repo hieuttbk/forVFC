@@ -1,4 +1,4 @@
-package WorkerApplication.Main;
+package http;
 
 public class HttpResponse {
 	private int statusCode;
