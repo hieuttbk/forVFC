@@ -71,6 +71,7 @@ public class WorkerHandler implements HttpHandler {
 				Date now = (Calendar.getInstance()).getTime();
 				Timestamp ts = new Timestamp(now.getTime());
 				String dataSource = command.getString("DTSOURCE");
+				
 				if (dataSource.equals(CommonVar.WORKERCSEID + "/" + CommonVar.WORKERCSENAME)) {
 					// DockerController.Deploy
 					System.out.println("DataSource is at this worker, skip pulling data");
@@ -84,7 +85,8 @@ public class WorkerHandler implements HttpHandler {
 							CommonVar.WORKERCSEID, CommonVar.WORKERCSENAME, command.getString("SERVICEID"),
 							command.getString("SERVICE"), commandIdNumber, command.getInt("STARTIMAGE"),
 							command.getInt("ENDIMAGE")); // deltaT1
-				} else { // if datasource is at another worker, then pull first and deploy after that
+				} 
+				else { // if datasource is at another worker, then pull first and deploy after that
 
 					String ratioImages = command.getInt("STARTIMAGE") + "-" + command.getInt("ENDIMAGE");
 

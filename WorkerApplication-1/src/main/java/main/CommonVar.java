@@ -34,8 +34,8 @@ public class CommonVar {
 	public static final String[] SUBCONTAINER = {"COMMAND"};
 	
 	
-	public static final String DATADIR = "D:\\2021\\VFC\\data\\w2\\cut_image";
-	public static final String folderDetect = "home/pi/data/cut_image/";
+	public static  String DATADIR = "D:\\2021\\VFC\\data\\w2\\cut_image";
+	public static  String folderDetect = "home/pi/data/cut_image/";
 	
 	public void getConfig() {
 		Properties prop = new Properties();
@@ -48,6 +48,8 @@ public class CommonVar {
 			// load a properties file
 			prop.load(input);
 			WORKERID = prop.getProperty("workerid");
+			DATADIR = prop.getProperty("datadir");
+			folderDetect = prop.getProperty("folderDetect");
 //	        // get the property value and print it out
 //	        System.out.println(prop.getProperty("database"));
 //	        System.out.println(prop.getProperty("dbuser"));
